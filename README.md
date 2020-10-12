@@ -33,3 +33,13 @@ To handle exceptions on subscriptions, ```catcherror()``` function is used. ```c
 We are using an API to request our data. Due to some errors, if API fails to respond then it will be handled in an observable that subscribes the error function.
 
 In the above code (apicall service), we created the searchCountryByName() method to call the API. We are calling the HTTP GET method to get a list of all data by capital name. We requested the API URL, <https://restcountries-v1.p.rapidapi.com/capital/name>, while passing name to get a response map to the Country class using the map key. It will return a response and map to the object. If the capital is not found then it will throw a not found exception, which will throw an error, “Capital not found!”. In the header we append the API-key and Content-type.
+
+## Here are some of the ways that you can expand your code for learning purposes
+
+* Installation of RxJS in Angular 7.
+* Import RxJS in an Angular application.
+* Learn how to call an API using HTTP Methods.
+* Data binding to the model.
+* Map the response and Bind with UI and model.
+* Create an HTTP request using HTTPClient in services to access API.
+* Create an HTTP header using HTTPHeader in services to append headers in an application.
