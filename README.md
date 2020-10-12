@@ -31,3 +31,5 @@ Operators are the function that is built and creates new observables. Different 
 To handle exceptions on subscriptions, ```catcherror()``` function is used. ```catcherror()``` function handles any damage to our Angular application whenever a response to a request fails.
 
 We are using an API to request our data. Due to some errors, if API fails to respond then it will be handled in an observable that subscribes the error function.
+
+In the above code (apicall service), we created the searchCountryByName() method to call the API. We are calling the HTTP GET method to get a list of all data by capital name. We requested the API URL, <https://restcountries-v1.p.rapidapi.com/capital/name>, while passing name to get a response map to the Country class using the map key. It will return a response and map to the object. If the capital is not found then it will throw a not found exception, which will throw an error, “Capital not found!”. In the header we append the API-key and Content-type.

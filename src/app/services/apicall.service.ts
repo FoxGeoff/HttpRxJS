@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import * as Rx from 'rxjs/Rx';
 import { from, Observable, throwError } from 'rxjs';
 import { Country } from '../models/country';
 import { map, catchError } from 'rxjs/operators';
